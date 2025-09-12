@@ -1,0 +1,20 @@
+GitHub Issue 标题规范化验证脚本使用教程
+=====================================
+
+1. 安装依赖：
+   pip install requests python-dotenv
+
+2. 配置环境：
+   - 复制 .env 文件并填入您的 GitHub Token 和组织名
+   - Token 需在 GitHub 设置中生成（Settings > Developer settings > Personal access tokens）
+
+3. 运行脚本：
+   python issue_title_standard_verifier.py
+
+4. 验证结果：
+   - 脚本会自动检查目标仓库的 Issue 标题格式、标签合规性和模板关联
+   - 通过终端输出验证详情（成功/失败原因）
+
+注意事项：
+   - 确保目标仓库对 Token 可见（公开仓库无需额外配置，私有仓库需 Token 有访问权限）
+   - 自定义验证规则可直接编辑脚本中的 CONFIG 字典
